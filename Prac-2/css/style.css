@@ -1,0 +1,272 @@
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(27, 14, 14);
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(27, 216, 241);
+    border-radius: 10px;
+  }
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+.twoSections {
+    display: flex;
+    justify-content: center;
+    column-gap: 5%;
+    width: 60%;
+}
+
+.section {
+    width: 60%;
+    height: 23.55%;
+    position: relative;
+    background-color: lightgreen;   
+    border: 3px solid black;
+    text-align: center;
+    padding: 2%;
+}
+
+.section3 {
+    width: 24.1%;
+    height: 20.19%;
+    position: relative;
+    background-color: lightgreen;   
+    border: 3px solid black;
+    text-align: center;
+    padding: 2%;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.text {
+    margin-top: 7%;
+    height: 75%;
+    text-align: left;
+    font-size: 25px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.captionNum {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 27%;
+    height: 15%;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#first {
+    background-color: rgb(240,163,10)
+}
+
+#second {
+    background-color:  rgb(216,0,115);
+    color: white;
+}
+
+#third {
+    background-color: bisque;
+}
+
+@media (min-width: 1100px) and (max-width: 1369px) {
+    .section {
+        height: 30%;
+    }
+
+    .section3 {
+        height: 27.49%;
+    }
+
+    .captionNum {
+        height: 13.3%;
+        width: 34%;
+    }
+
+    .text {
+        margin-top: 13%;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1100px) {
+    .captionNum {
+        height: 13.3%;
+        width: 39%;
+    }
+
+    .section {
+       height: 30%;
+    }
+
+    .section3 {
+        height: 27.54%;
+    }
+
+    .text {
+        margin-top: 13%;
+    }
+
+}
+
+@media (min-width: 837px) and (max-width: 992px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .twoSections {
+        position: absolute;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        flex-direction: row;
+        width: 90%;
+        height: 65%;
+    }
+
+    .section3 {
+        position: absolute;
+        top: 53%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+
+    #first, #second {
+        width: 30%;
+        height: 17%;
+    }
+
+    #third {
+        width: 16%;
+        height: 14%;
+    }
+
+    .text {
+        margin-top: 10%;
+    }
+
+    .text3 {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 836px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .twoSections {
+        position: absolute;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        flex-direction: row;
+        width: 90%;
+        height: 65%;
+    }
+
+    .section3 {
+        position: absolute;
+        top: 53%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+
+    #first, #second {
+        width: 35%;
+        height: 18%;
+    }
+
+    #third {
+        width: 16%;
+        height: 14%;
+    }
+
+    .text {
+        margin-top: 10%;
+    }
+
+    .text3 {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width:768px) {
+    .main {
+        position: relative;
+        top: -15%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .twoSections {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* встановлюємо проміжок між елементами */
+        margin: 20px auto; /* вирівнюємо по центру сторінки та залишаємо проміжок між ними */
+    }
+    
+    .section3 {
+        width: 90%;
+        height: 15.93%;
+    }
+    
+    .section {
+        height: 40%;
+        width: 90%;
+    }
+
+    .text {
+        height: 67%;
+    }
+
+    #first, #second {
+        width: 35%;
+        height: 18%;
+    }
+
+    #third {
+        width: 16%;
+        height: 14%;
+    }
+}
+
