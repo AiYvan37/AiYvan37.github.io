@@ -8,64 +8,98 @@ class Square {
     }
 
     length() {
-        console.log("Length of all sides of the square:", 4 * this.a);
+        return 4 * this.a;
     }
 
     square() {
-        console.log("Area of the square:", this.a ** 2);
+        return this.a * this.a;
     }
 
     info() {
-        console.log("Information about the square:");
+        console.log("Square characteristics:");
         console.log("Side length:", this.a);
-        this.length();
-        this.square();
+        console.log("Sum of side lengths:", this.length());
+        console.log("Area:", this.square());
     }
 }
 
 class Rectangle extends Square {
     constructor(a, b) {
         super(a);
-        this.b = b;
+        this._b = b;
     }
 
     static help() {
-        console.log("A rectangle is a geometric figure with four right angles, where opposite sides are equal.");
+        console.log("A rectangle is a geometric figure with four sides, opposite sides of which are parallel and equal, and all angles are right angles.");
+    }
+
+    get b() {
+        return this._b;
+    }
+
+    set b(value) {
+        this._b = value;
     }
 
     length() {
-        console.log("Length of the rectangle:", 2 * (this.a + this.b));
+        return 2 * (this.a + this.b);
     }
 
     square() {
-        console.log("Area of the rectangle:", this.a * this.b);
+        return this.a * this.b;
     }
 
     info() {
-        console.log("Information about the rectangle:");
+        console.log("Rectangle characteristics:");
         console.log("Length:", this.a);
         console.log("Width:", this.b);
-        this.length();
-        this.square();
+        console.log("Sum of side lengths:", this.length());
+        console.log("Area:", this.square());
     }
 }
 
 class Rhombus extends Square {
     constructor(a, alpha, beta) {
         super(a);
-        this.alpha = alpha;
-        this.beta = beta;
+        this._alpha = alpha;
+        this._beta = beta;
     }
 
     static help() {
-        console.log("A rhombus is a geometric figure with all sides of equal length and opposite angles equal.");
+        console.log("A rhombus is a geometric figure with four equal sides and all angles are equal.");
+    }
+
+    get alpha() {
+        return this._alpha;
+    }
+
+    set alpha(value) {
+        this._alpha = value;
+    }
+
+    get beta() {
+        return this._beta;
+    }
+
+    set beta(value) {
+        this._beta = value;
+    }
+
+    length() {
+        return 4 * this.a;
+    }
+
+    square() {
+        return this.a * this.a * Math.sin(this.alpha * Math.PI / 180);
     }
 
     info() {
-        console.log("Information about the rhombus:");
+        console.log("Rhombus characteristics:");
         console.log("Side length:", this.a);
-        console.log("Obtuse angle:", this.alpha, "degrees");
-        console.log("Acute angle:", this.beta, "degrees");
+        console.log("Acute angle:", this.alpha, "degrees");
+        console.log("Obtuse angle:", this.beta, "degrees");
+        console.log("Sum of side lengths:", this.length());
+        console.log("Area:", this.square());
     }
 }
 
@@ -77,15 +111,25 @@ class Parallelogram extends Rectangle {
     }
 
     static help() {
-        console.log("A parallelogram is a quadrilateral with opposite sides equal and parallel.");
+        console.log("A parallelogram is a geometric figure with opposite sides parallel to each other, and all angles are parallel.");
+    }
+
+    length() {
+        return 2 * (this.a + this.b);
+    }
+
+    square() {
+        return this.a * this.b * Math.sin(this.alpha * Math.PI / 180);
     }
 
     info() {
-        console.log("Information about the parallelogram:");
+        console.log("Parallelogram characteristics:");
         console.log("Length:", this.a);
         console.log("Width:", this.b);
-        console.log("Obtuse angle:", this.alpha, "degrees");
-        console.log("Acute angle:", this.beta, "degrees");
+        console.log("Acute angle:", this.alpha, "degrees");
+        console.log("Obtuse angle:", this.beta, "degrees");
+        console.log("Sum of side lengths:", this.length());
+        console.log("Area:", this.square());
     }
 }
 
@@ -94,12 +138,14 @@ Rectangle.help();
 Rhombus.help();
 Parallelogram.help();
 
-const square = new Square(8);
-const rectangle = new Rectangle(4, 6);
-const rhombus = new Rhombus(5, 70, 110);
-const parallelogram = new Parallelogram(4, 8, 52, 128);
+const squareObj = new Square(8);
+squareObj.info();
 
-square.info();
-rectangle.info();
-rhombus.info();
-parallelogram.info();
+const rectangleObj = new Rectangle(4, 6);
+rectangleObj.info();
+
+const rhombusObj = new Rhombus(5, 70, 110);
+rhombusObj.info();
+
+const parallelogramObj = new Parallelogram(4, 8, 52, 128);
+parallelogramObj.info();
