@@ -9,3 +9,4 @@
 - [Prac-5](https://aiyvan37.github.io/Prac-5/)
 - [Prac-6](https://aiyvan37.github.io/Prac-6/)
 - [Prac-7](https://aiyvan37.github.io/Prac-7/)
+- [Prac-8](https://aiyvan37.github.io/Prac-8/)
