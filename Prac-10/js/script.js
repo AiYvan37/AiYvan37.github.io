@@ -1,7 +1,7 @@
 var SortLib = {
 
-  // Exchange
-  bubbleSort: function(arr, ascending = true) {
+    // Exchange
+    bubbleSort: function(arr, ascending = true) {
       let swapCount = 0;
       let compareCount = 0;
       let len = arr.length;
@@ -18,10 +18,10 @@ var SortLib = {
       }
       console.log("Exchanges: " + swapCount + ", Comparisons: " + compareCount);
       return arr;
-  },
+    },
 
-  // min elements
-  selectionSort: function(arr, ascending = true) {
+    // min elements
+    selectionSort: function(arr, ascending = true) {
       let swapCount = 0;
       let compareCount = 0;
       let len = arr.length;
@@ -42,10 +42,10 @@ var SortLib = {
       }
       console.log("Exchanges: " + swapCount + ", Comparisons: " + compareCount);
       return arr;
-  },
+    },
 
-  // insertion
-  insertionSort: function(arr, ascending = true) {
+    // insertion
+    insertionSort: function(arr, ascending = true) {
       let swapCount = 0;
       let compareCount = 0;
       let len = arr.length;
@@ -62,7 +62,7 @@ var SortLib = {
       }
       console.log("Exchanges: " + swapCount + ", Comparisons: " + compareCount);
       return arr;
-  }
+    }
 };
 
 let arr = [];
