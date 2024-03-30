@@ -13,3 +13,4 @@
 - [Prac-9](https://aiyvan37.github.io/Prac-9/)
 - [Prac-10](https://aiyvan37.github.io/Prac-10/)
 - [Prac-11](https://aiyvan37.github.io/Prac-11/)
+- [Prac-12](https://aiyvan37.github.io/Prac-12/)
