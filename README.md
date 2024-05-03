@@ -17,3 +17,4 @@
 - [Prac-13](https://aiyvan37.github.io/Prac-13/)
 - [Prac-14](https://aiyvan37.github.io/Prac-14/)
 - [KR-1](https://aiyvan37.github.io/kr1/)
+- [KR-2](https://aiyvan37.github.io/kr2/)
