@@ -1,0 +1,53 @@
+.burger-btn {
+    display: none;
+}
+
+.close-btn {
+    visibility: hidden;
+}
+
+.interactive-nav.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.interactive-nav.fullscreen a {
+    color: white;
+    font-size: 24px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.interactive-nav.fullscreen .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.interactive-nav.fullscreen .close-btn.visible {
+    visibility: visible; 
+}
+
+@media (max-width: 768px) {
+    .burger-btn {
+        display: flex;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        justify-content: right;
+        margin-right: 3.125rem;
+    }
+}
