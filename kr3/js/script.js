@@ -57,9 +57,9 @@ function calculate() {
           return;
         }
   
-        var value = operand1 || operand2; // Беремо значення з op1 або op2
-        var result = Math.log(value); // Обчислення натурального логарифму
-        document.getElementById('res').innerHTML = 'Result: ' + result.toFixed(4); // Округлення результату до 4 знаків після коми
+        var value = operand1 || operand2;
+        var result = Math.log(value);
+        document.getElementById('res').innerHTML = 'Result: ' + result.toFixed(4);
       }
     };
     xhr.send();
