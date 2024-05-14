@@ -131,7 +131,6 @@ header {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     margin-top: 20px;
-    color: aliceblue;
     transition: background-color 0.5s,
     box-shadow 0.5s;
 }
@@ -139,6 +138,11 @@ header {
 .description button:hover {
     background-color: #949090;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.description button a {
+    text-decoration: none;
+    color: aliceblue;
 }
 
 .eat-image {    
